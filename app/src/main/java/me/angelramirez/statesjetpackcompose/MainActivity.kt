@@ -22,15 +22,3 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-@Preview(showBackground = true)
-@Composable
-fun PrimerPantalla() {
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    StatesJetpackcomposeTheme {
-        Greeting("Android")
-    }
-}
