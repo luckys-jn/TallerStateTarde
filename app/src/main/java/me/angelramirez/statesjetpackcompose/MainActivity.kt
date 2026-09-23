@@ -1,0 +1,36 @@
+package me.angelramirez.statesjetpackcompose
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+import me.angelramirez.statesjetpackcompose.ui.theme.StatesJetpackcomposeTheme
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            PrimerPantalla()
+                }
+            }
+        }
+@Preview(showBackground = true)
+@Composable
+fun PrimerPantalla() {
+}
+
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    StatesJetpackcomposeTheme {
+        Greeting("Android")
+    }
+}
